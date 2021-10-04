@@ -9,8 +9,8 @@ body {
     height: 100%;
 }
 .bg-wrapper {
-    --webkit-background-image: url("./img/wood.jpg");
-    background-image: url("./img/wood.jpg");
+    --webkit-background-image: url("img/wood.jpg");
+    background-image: url("img/wood.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
