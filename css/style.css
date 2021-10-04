@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    height: 100%;
+    height: 100vh;
 }
 .bg-wrapper {
     --webkit-background-image: url("../img/wood.jpg");
@@ -89,4 +89,10 @@ body {
     border: solid 2px;
     box-shadow: 0 4px 8px 0 rgba(8, 87, 14, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    
+}
+
+@media screen and(max-width: 360px) {
+    .titel h1{
+        font-size: 2em;
+    }   
 }
