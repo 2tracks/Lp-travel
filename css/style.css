@@ -8,6 +8,9 @@ body {
     font-family: 'Poppins', sans-serif;
     height: 100vh;
 }
+.container{
+    height: 100vh;
+}
 .bg-wrapper {
     --webkit-background-image: url("../img/wood.jpg");
     background-image: url("../img/wood.jpg");
