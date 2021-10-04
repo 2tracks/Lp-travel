@@ -10,7 +10,7 @@ body {
 }
 .bg-wrapper {
     background-image: url("/img/wood.jpg");
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
