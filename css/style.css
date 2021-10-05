@@ -8,23 +8,23 @@ html,
 body {
     font-family: 'Poppins', sans-serif;
     min-height: 100%; /* fallback for IE and older browsers */
+    max-height: -webkit-fill-available; /* bug fix for iphone */
     min-height: 100vh;
     overflow: auto;
 }
 .container{
     min-height: 100%; /* fallback for IE and older browsers */
+    max-height: -webkit-fill-available; /* bug fix for iphone */
     min-height: 100vh;
 }
 .bg-wrapper {
-    --webkit-background-image: url("../img/wood.jpg");
-    background-image: url("../img/wood.jpg");
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    max-height: -webkit-fill-available;
+    max-height: -webkit-fill-available; /* bug fix for iphone */
     height: 100; /* fallback for IE and older browsers */
     height: 100vh;
 }
@@ -102,8 +102,27 @@ body {
    
 }
 
-@media screen and(max-width: 360px) {
+
+/* Media query for mobile*/
+@media (max-width: 480px) {
+    .bg-wrapper {
+        background-image: url(../img/wood_sm.jpg);
+    }
     .titel h1{
-        font-size: 2em;
+        font-size: 1.5em;
     }   
+}
+
+/* Media query for tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .bg-wrapper {
+        background-image: url(../img/wood_md.jpg);
+    }
+}
+
+/* Media query for desktop */
+@media (min-width: 1025px) {
+    .bg-wrapper {
+	    background-image: url(../img/wood_lg.jpg);
+   }
 }
