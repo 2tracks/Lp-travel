@@ -3,25 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
-html {
-    min-height: 100%;
-}
 
+html,
 body {
     font-family: 'Poppins', sans-serif;
-    min-height: 100%;
+    min-height: 100%; /* fallback for IE and older browsers */
+    min-height: 100vh;
+    overflow: auto;
 }
 .container{
-    min-height: 100%;
+    min-height: 100%; /* fallback for IE and older browsers */
+    min-height: 100vh;
 }
 .bg-wrapper {
-    --webkit-background-image: url("../img/wood.jpg");
-    background-image: url("../img/wood.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url("../img/wood.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     min-height: -webkit-fill-available;
+    height: 100; /* fallback for IE and older browsers */
     height: 100vh;
 }
 .titel {
