@@ -16,12 +16,12 @@ body {
     min-height: 100vh;
 }
 .bg-wrapper {
-    background-image: url("../img/wood.jpg") no-repeat center center fixed;
+    background-image: url("../img/wood.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: -webkit-fill-available;
+    max-height: -webkit-fill-available;
     height: 100; /* fallback for IE and older browsers */
     height: 100vh;
 }
