@@ -8,14 +8,14 @@ html,
 body {
     font-family: 'Poppins', sans-serif;
     height: 100%; /* fallback for IE and older browsers */
-    height: -webkit-fill-available; /* bug fix for iphone */
+    max-height: -webkit-fill-available; /* bug fix for iphone */
     height: 100vh;
     overflow: auto;
 }
 
 .container{
     min-height: 100%; /* fallback for IE and older browsers */
-    min-height: -webkit-fill-available; /* bug fix for iphone */
+    max-height: -webkit-fill-available; /* bug fix for iphone */
     min-height: 100vh;
 }
 
