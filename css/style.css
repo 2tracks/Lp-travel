@@ -7,16 +7,18 @@
 html,
 body {
     font-family: 'Poppins', sans-serif;
-    min-height: 100%; /* fallback for IE and older browsers */
-    max-height: -webkit-fill-available; /* bug fix for iphone */
-    min-height: 100vh;
+    height: 100%; /* fallback for IE and older browsers */
+    height: -webkit-fill-available; /* bug fix for iphone */
+    height: 100vh;
     overflow: auto;
 }
+
 .container{
     min-height: 100%; /* fallback for IE and older browsers */
-    max-height: -webkit-fill-available; /* bug fix for iphone */
+    min-height: -webkit-fill-available; /* bug fix for iphone */
     min-height: 100vh;
 }
+
 .bg-wrapper {
     background-repeat: no-repeat;
     background-position: center;
@@ -24,10 +26,11 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    max-height: -webkit-fill-available; /* bug fix for iphone */
+    min-height: -webkit-fill-available; /* bug fix for iphone */
     height: 100%; /* fallback for IE and older browsers */
     height: 100vh;
 }
+
 .titel {
     top: 10%;
     width: 100%;
@@ -38,6 +41,7 @@ body {
     opacity: 0;
     transition: all 2s ease-in;
 }
+
 .titel h1 {
     color: rgb(15, 66, 5);
     font-size: 3em;
@@ -57,6 +61,7 @@ body {
 .love-travel h3{
     color: rgb(15, 66, 5);
 }
+
 .social{
     position: absolute;
     bottom: 50px;
@@ -88,6 +93,7 @@ body {
     border: solid 1px;
     border-radius: 50%;
 }
+
 .social-icons-item{
     transition: all 0.5s ease;
 }
@@ -96,6 +102,7 @@ body {
     --webkit-transform: scaleY(200%);
     transform: scale(200%);
 }
+
 .fab:hover{
     border: solid 2px;
     box-shadow: 0 4px 8px 0 rgba(8, 87, 14, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -118,11 +125,19 @@ body {
     .bg-wrapper {
         background-image: url(../img/wood_md.jpg);
     }
+
+    .social {
+        bottom: 60px;
+    }
 }
 
 /* Media query for desktop */
 @media (min-width: 1025px) {
     .bg-wrapper {
 	    background-image: url(../img/wood_lg.jpg);
+   }
+   
+   .social {
+       bottom: 70px;
    }
 }
